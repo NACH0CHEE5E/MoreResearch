@@ -1,0 +1,134 @@
+﻿<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CE80D715-66D4-4DF6-9E67-57E554E78DAF}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <NoStandardLibraries>false</NoStandardLibraries>
+    <AssemblyName>MoreResearch</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>MoreResearch</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="0Harmony">
+      <HintPath>..\..\Debug\Debug\net472\0Harmony.dll</HintPath>
+    </Reference>
+    <Reference Include="APIProvider">
+      <HintPath>..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Colony Survival\gamedata\mods\Pipliz\BaseGame\src\bin\Debug\APIProvider.dll</HintPath>
+    </Reference>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Colony Survival\gamedata\mods\Pipliz\BaseGame\src\bin\Debug\Assembly-CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="BaseGame">
+      <HintPath>..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Colony Survival\gamedata\mods\Pipliz\BaseGame\src\bin\Debug\BaseGame.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib">
+      <HintPath>..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Colony Survival\gamedata\mods\Pipliz\BaseGame\src\bin\Debug\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Open.Nat">
+      <HintPath>..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Colony Survival\gamedata\mods\Pipliz\BaseGame\src\bin\Debug\Open.Nat.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Threading">
+      <HintPath>..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Colony Survival\gamedata\mods\Pipliz\BaseGame\src\bin\Debug\System.Threading.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="UnityEngine">
+      <HintPath>..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Colony Survival\gamedata\mods\Pipliz\BaseGame\src\bin\Debug\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Colony Survival\gamedata\mods\Pipliz\BaseGame\src\bin\Debug\UnityEngine.UI.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".gitattributes" />
+    <None Include=".git\COMMIT_EDITMSG" />
+    <None Include=".git\config" />
+    <None Include=".git\description" />
+    <None Include=".git\HEAD" />
+    <None Include=".git\hooks\applypatch-msg.sample" />
+    <None Include=".git\hooks\commit-msg.sample" />
+    <None Include=".git\hooks\fsmonitor-watchman.sample" />
+    <None Include=".git\hooks\post-update.sample" />
+    <None Include=".git\hooks\pre-applypatch.sample" />
+    <None Include=".git\hooks\pre-commit.sample" />
+    <None Include=".git\hooks\pre-push.sample" />
+    <None Include=".git\hooks\pre-rebase.sample" />
+    <None Include=".git\hooks\pre-receive.sample" />
+    <None Include=".git\hooks\prepare-commit-msg.sample" />
+    <None Include=".git\hooks\update.sample" />
+    <None Include=".git\index" />
+    <None Include=".git\info\exclude" />
+    <None Include=".git\logs\HEAD" />
+    <None Include=".git\logs\refs\heads\master" />
+    <None Include=".git\objects\54\06d3d833863b3f7890520c1526a88b3e250e29" />
+    <None Include=".git\objects\58\9f9eef22db26e941784e6be846cbdb5debc408" />
+    <None Include=".git\objects\c1\517dcd0ef971badc7ad4e01085fcce96201a77" />
+    <None Include=".git\objects\d0\f2c1a754effb023bec696a0faf9b616ea0f93f" />
+    <None Include=".git\objects\df\e0770424b2a19faf507a501ebfc23be8f54e7b" />
+    <None Include=".git\refs\heads\master" />
+    <None Include="README.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Research\BannerRadius\BannerRadius10.cs" />
+    <Compile Include="Research\BannerRadius\BannerRadius11.cs" />
+    <Compile Include="Research\BannerRadius\BannerRadius6.cs" />
+    <Compile Include="Research\BannerRadius\BannerRadius7.cs" />
+    <Compile Include="Research\BannerRadius\BannerRadius8.cs" />
+    <Compile Include="Research\BannerRadius\BannerRadius9.cs" />
+    <Compile Include="Research\Builder\BuilderSize10.cs" />
+    <Compile Include="Research\Builder\BuilderSize11.cs" />
+    <Compile Include="Research\Builder\BuilderSize6.cs" />
+    <Compile Include="Research\Builder\BuilderSize7.cs" />
+    <Compile Include="Research\Builder\BuilderSize8.cs" />
+    <Compile Include="Research\Builder\BuilderSize9.cs" />
+    <Compile Include="Research\Digger\DiggerSize10.cs" />
+    <Compile Include="Research\Digger\DiggerSize11.cs" />
+    <Compile Include="Research\Digger\DiggerSize6.cs" />
+    <Compile Include="Research\Digger\DiggerSize7.cs" />
+    <Compile Include="Research\Digger\DiggerSize8.cs" />
+    <Compile Include="Research\Digger\DiggerSize9.cs" />
+    <Compile Include="Research\HealthRegenSize\HealthRegenSize5.cs" />
+    <Compile Include="Research\HealthRegenSize\HealthRegenSize6.cs" />
+    <Compile Include="Research\HealthRegenSize\HealthRegenSize7.cs" />
+    <Compile Include="Research\HealthRegenSize\HealthRegenSize8.cs" />
+    <Compile Include="Research\HealthSize\HealthSize5.cs" />
+    <Compile Include="Research\HealthSize\HealthSize6.cs" />
+    <Compile Include="Research\HealthSize\HealthSize7.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include=".git\objects\info\" />
+    <Folder Include=".git\objects\pack\" />
+    <Folder Include=".git\refs\tags\" />
+    <Folder Include="Research\HealthRegenSpeed\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSHARP.Targets" />
+  <ProjectExtensions>
+    <VisualStudio AllowExistingFolder="true" />
+  </ProjectExtensions>
+</Project>
