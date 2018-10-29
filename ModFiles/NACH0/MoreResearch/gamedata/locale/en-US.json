@@ -1,0 +1,104 @@
+{
+	"sentences": {
+		"Nach0DiggerSize6" : {
+			"description" : "Increases the max digger range to 2.500.000",
+			"name" : "Digger Limit VI"
+		},
+		"Nach0DiggerSize7" : {
+			"description" : "Increases the max digger range to 5.000.000",
+			"name" : "Digger Limit VII"
+		},
+		"Nach0DiggerSize8" : {
+			"description" : "Increases the max digger range to 12.500.000",
+			"name" : "Digger Limit VIII"
+		},
+		"Nach0DiggerSize9" : {
+			"description" : "Increases the max digger range to 25.000.000",
+			"name" : "Digger Limit IX"
+		},
+		"Nach0DiggerSize10" : {
+			"description" : "Increases the max digger range to 50.000.000",
+			"name" : "Digger Limit X"
+		},
+		"Nach0DiggerSize11" : {
+			"description" : "Increases the max digger range to 100.000.000",
+			"name" : "Digger Limit XI"
+		},
+		"Nach0BuilderSize6" : {
+			"description" : "Increases the max builder range to 2.500.000",
+			"name" : "Builder Limit VI"
+		},
+		"Nach0BuilderSize7" : {
+			"description" : "Increases the max builder range to 5.000.000",
+			"name" : "Builder Limit VII"
+		},
+		"Nach0BuilderSize8" : {
+			"description" : "Increases the max builder range to 12.500.000",
+			"name" : "Builder Limit VIII"
+		},
+		"Nach0BuilderSize9" : {
+			"description" : "Increases the max builder range to 25.000.000",
+			"name" : "Builder Limit IX"
+		},
+		"Nach0BuilderSize10" : {
+			"description" : "Increases the max builder range to 50.000.000",
+			"name" : "Builder Limit X"
+		},
+		"Nach0BuilderSize11" : {
+			"description" : "Increases the max builder range to 100.000.000",
+			"name" : "Builder Limit XI"
+		},
+		"Nach0BannerRadius10" : {
+			"description" : "Increases the safe radius created to 225 blocks",
+			"name" : "Banner Radius X"
+		},
+		"Nach0BannerRadius11" : {
+			"description" : "Increases the safe radius created to 250 blocks",
+			"name" : "Banner Radius XI"
+		},
+		"Nach0BannerRadius6" : {
+			"description" : "Increases the safe radius created to 125 blocks",
+			"name" : "Banner Radius VI"
+		},
+		"Nach0BannerRadius7" : {
+			"description" : "Increases the safe radius created to 150 blocks",
+			"name" : "Banner Radius VII"
+		},
+		"Nach0BannerRadius8" : {
+			"description" : "Increases the safe radius created to 175 blocks",
+			"name" : "Banner Radius VIII"
+		},
+		"Nach0BannerRadius9" : {
+			"description" : "Increases the safe radius created to 200 blocks",
+			"name" : "Banner Radius IX"
+		},
+		"Nach0PlayerHealthRegenSize5": {
+			"description": "Increases regenerated amount of HP from 100 to 125",
+			"name": "Regeneration Increase V"
+		},
+		"Nach0PlayerHealthRegenSize6": {
+			"description": "Increases regenerated amount of HP from 125 to 200",
+			"name": "Regeneration Increase VI"
+		},
+		"Nach0PlayerHealthRegenSize7": {
+			"description": "Increases regenerated amount of HP from 200 to 350",
+			"name": "Regeneration Increase VII"
+		},
+		"Nach0PlayerHealthRegenSize8": {
+			"description": "Increases regenerated amount of HP from 350 to 500",
+			"name": "Regeneration Increase VIII"
+		},
+		"Nach0PlayerHealthSize5": {
+					"description" : "Increases Max HP to 350",
+					"name" : "Health Increase V"
+		},
+		"Nach0PlayerHealthSize6": {
+					"description" : "Increases Max HP to 500",
+					"name" : "Health Increase VI"
+		},
+		"Nach0PlayerHealthSize7": {
+					"description" : "Increases Max HP to 850",
+					"name" : "Health Increase VII"
+		}
+	}
+}

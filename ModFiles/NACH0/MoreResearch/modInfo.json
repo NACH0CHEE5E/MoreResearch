@@ -1,0 +1,44 @@
+[{
+	"name": "NACH0.MoreResearch",
+	"version": "1.2.0",
+	"dllpath": "MoreResearch.dll",
+	"namepretty": "More Research",
+	"enabled": true,
+	"marksgamemodded": true,
+	"compatibleversions": [
+		"0.7.0"
+	],
+	"jsonFiles": [
+		{
+			"fileType": "addOrOverrideLocalization",
+			"relativePath": "gamedata/locale/en-US.json"
+		}
+	],
+	"patchnotes": [
+		{
+			"version": "1.2.0",
+			"notes": [
+				"*0.7.0 support",
+				"*If you find any issues or have suggestions join the discord",
+				"*discord.gg/tqFhxhm"
+			]
+		},
+		{
+			"version": "1.1.0",
+			"notes": [
+				"fixed an issue with the icons",
+				"changed the numbers for how big the banner radius is",
+				"*If you find any issues or have suggestions join the discord",
+				"*discord.gg/tqFhxhm"
+			]
+		},
+		{
+			"version": "1.0.0",
+			"notes": [
+				"This is now the more builder, playerhealth, and banner research mods remove them to use this mod",
+				"*If you find any issues or have suggestions join the discord",
+				"*discord.gg/tqFhxhm"
+			]
+		}
+	]	
+}]

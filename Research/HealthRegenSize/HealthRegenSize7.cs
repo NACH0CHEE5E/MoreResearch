@@ -1,5 +1,4 @@
-﻿using Server.Science;
-using Pipliz.Mods.APIProvider.Science;
+﻿using Science;
 
 namespace Nach0.Research.HealthRegenSize
 {
@@ -9,7 +8,7 @@ namespace Nach0.Research.HealthRegenSize
         public HealthRegenSize7()
         {
             key = "Nach0PlayerHealthRegenSize7";
-            icon = "gamedata/mods/NACH0/MorePlayerHealthResearch/gamedata/textures/icons/healthregensize7.png";
+            icon = "gamedata/mods/NACH0/MoreResearch/gamedata/textures/icons/healthregensize7.png";
             iterationCount = 550;
             AddIterationRequirement("sciencebagbasic", 7);
             AddIterationRequirement("sciencebaglife", 10);
@@ -18,9 +17,9 @@ namespace Nach0.Research.HealthRegenSize
 
         }
 
-        public override void OnResearchComplete(ScienceManagerPlayer manager, EResearchCompletionReason reason)
+        public override void OnResearchComplete(ColonyScienceState manager, EResearchCompletionReason reason)
         {
-            manager.Player.GetTempValues(true).Set("pipliz.healthregenmax", 350f);
+            manager.Colony.TemporaryData.SetAs("pipliz.healthregenmax", 350f);
         }
     }
 }

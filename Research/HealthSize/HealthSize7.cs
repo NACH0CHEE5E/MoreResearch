@@ -1,5 +1,4 @@
-﻿using Server.Science;
-using Pipliz.Mods.APIProvider.Science;
+﻿using Science;
 
 namespace Nach0.Research.HealthSize
 {
@@ -9,19 +8,25 @@ namespace Nach0.Research.HealthSize
         public HealthSize7()
         {
             key = "Nach0PlayerHealthSize7";
-            icon = "gamedata/mods/NACH0/MorePlayerHealthResearch/gamedata/textures/icons/healthsize7.png";
+            icon = "gamedata/mods/NACH0/MoreResearch/gamedata/textures/icons/healthsize7.png";
             iterationCount = 1000;
             AddIterationRequirement("sciencebagadvanced", 9);
             AddIterationRequirement("sciencebaglife", 9);
             AddDependency("Nach0PlayerHealthSize6");
         }
 
-        public override void OnResearchComplete(ScienceManagerPlayer manager, EResearchCompletionReason reason)
+        public override void OnResearchComplete(ColonyScienceState manager, EResearchCompletionReason reason)
         {
-            manager.Player.GetTempValues(true).Set("pipliz.healthmax", 850f);
+            manager.Colony.TemporaryData.SetAs("pipliz.healthmax", 850f);
             if (reason == EResearchCompletionReason.ProgressCompleted)
             {
-                manager.Player.SendHealthPacket();
+                for (int i = 0; i < manager.Colony.Owners.Length; i++)
+                {
+                    if (manager.Colony.Owners[i].ShouldSendData)
+                    {
+                        manager.Colony.Owners[i].SendHealthPacket();
+                    }
+                }
             }
         }
     }

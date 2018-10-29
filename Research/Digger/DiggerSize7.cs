@@ -1,5 +1,5 @@
-﻿using Server.Science;
-using Pipliz.Mods.APIProvider.Science;
+﻿using Science;
+using Pipliz.Mods.BaseGame.Researches;
 
 namespace Nach0.Research.Digger
 {
@@ -9,17 +9,17 @@ namespace Nach0.Research.Digger
         public DiggerSize7()
         {
             key = "Nach0DiggerSize7";
-            icon = "gamedata/mods/NACH0/MoreBuilderResearch/gamedata/textures/icons/diggersize7.png";
-            iterationCount = 800;
+            icon = "gamedata/mods/NACH0/MoreResearch/gamedata/textures/icons/diggersize7.png";
+            iterationCount = 550;
             AddIterationRequirement("sciencebagadvanced");
             AddIterationRequirement("sciencebagcolony");
             AddDependency("Nach0DiggerSize6");
         }
 
-        public override void OnResearchComplete(ScienceManagerPlayer manager, EResearchCompletionReason reason)
+        public override void OnResearchComplete(ColonyScienceState manager, EResearchCompletionReason reason)
         {
-            manager.Player.GetTempValues(true).Set("pipliz.diggerlimit", 5000000);
-            Pipliz.Mods.BaseGame.Researches.ConstructionHelper.SendPacket(manager.Player);
+            manager.Colony.TemporaryData.SetAs("pipliz.diggerlimit", 25000);
+            ConstructionHelper.SendPacket(manager.Colony);
         }
     }
 }

@@ -9,8 +9,8 @@ namespace Nach0.Research.BannerRadius
         public BannerRadius11()
         {
             key = "Nach0BannerRadius11";
-            icon = "gamedata/mods/NACH0/MoreBannerResearch/gamedata/textures/icons/bannerradius11.png";
-            iterationCount = 1750;
+            icon = "gamedata/mods/NACH0/MoreResearch/gamedata/textures/icons/bannerradius11.png";
+            iterationCount = 1500;
             AddIterationRequirement("sciencebagadvanced");
             AddIterationRequirement("sciencebagcolony");
             AddDependency("Nach0BannerRadius10");
@@ -18,7 +18,7 @@ namespace Nach0.Research.BannerRadius
 
         public override void OnResearchComplete(ScienceManagerPlayer manager, EResearchCompletionReason reason)
         {
-            manager.Player.GetTempValues(true).Set("pipliz.bannersaferadius", 850);
+            manager.Player.GetTempValues(true).Set("pipliz.bannersaferadius", 250);
             if (reason == EResearchCompletionReason.ProgressCompleted)
             {
                 BannerTracker.SendPacket(manager.Player);
